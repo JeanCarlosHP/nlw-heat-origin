@@ -122,9 +122,6 @@ ul li a {
 }
 
 @media (min-width: 720px) {
-}
-
-@media (min-width: 960px) {
   body {
     background-color: var(--dark-black);
     background-image: url('./images/balls.svg');
@@ -162,5 +159,21 @@ ul li a {
 
   ul {
     margin-top: 4rem;
+  }
+
+  ul li a:hover {
+    background-color: #4f4f4f;
+  }
+
+  ul li a i {
+    display: grid;
+    place-items: center;
+
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+
+  ul li a i:hover {
+    transform: scale(1.1);
   }
 }
