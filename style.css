@@ -125,6 +125,8 @@ ul li a {
     background-image: url('./images/balls.svg');
     background-repeat: no-repeat;
     background-position-x: center;
+
+    animation: balls-down 2.5s linear;
   }
 
   main {
@@ -135,6 +137,8 @@ ul li a {
     background-image: url('./images/mask.svg');
 
     position: relative;
+
+    animation: badge-down 1.5s normal;
   }
 
   main::after {
@@ -173,5 +177,23 @@ ul li a {
 
   ul li a i:hover {
     transform: scale(1.1);
+  }
+
+  @keyframes badge-down {
+    from {
+      top: -73rem;
+    }
+    to {
+      top: 0;
+    }
+  }
+
+  @keyframes balls-down {
+    from {
+      background-position-y: -30rem;
+    }
+    to {
+      background-position-y: 0;
+    }
   }
 }
