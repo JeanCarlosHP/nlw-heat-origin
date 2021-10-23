@@ -18,15 +18,13 @@ body {
   place-items: center;
 
   height: 100vh;
-
-  background-color: var(--dark-black);
 }
 
 main {
-  background: url('./images/background.svg') no-repeat center/cover;
+  background: url('./images/background.svg') no-repeat top/cover;
+
   width: 100vw;
   height: 100vh;
-  /* min-height: 81.2rem; */
 }
 
 .container {
@@ -121,7 +119,7 @@ ul li a {
   margin: 0;
 }
 
-@media (min-width: 720px) {
+@media (min-width: 530px) {
   body {
     background-color: var(--dark-black);
     background-image: url('./images/balls.svg');
